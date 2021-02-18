@@ -1,0 +1,3 @@
+[submodule "dlib-test/components/dlib"]
+	path = dlib-test/components/dlib
+	url = https://github.com/DiplomInformatikerFranzHoepfinger/dlib.git
