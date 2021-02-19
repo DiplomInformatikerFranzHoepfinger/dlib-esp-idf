@@ -158,11 +158,5 @@ extern "C" void app_main(void)
     cout << "num dictionary vectors for center 2: " << test.get_kcentroid(2).dictionary_size() << endl;
 
 
-    // Finally, we can also solve the same kind of non-linear clustering problem with
-    // spectral_cluster().  The output is a vector that indicates which cluster each sample
-    // belongs to.  Just like with kkmeans, it assigns each point to the correct cluster.
-    std::vector<unsigned long> assignments = spectral_cluster(kernel_type(0.1), samples, 3);
-    cout << mat(assignments) << endl;
-
     ESP_LOGI(TAG, "Example end");
 }
